@@ -1,0 +1,42 @@
+services:
+  sub-go:
+    image: sub-go
+    container_name: go-rabbitmq-subscriber
+#    depends_on:
+#      - rabbitmq
+    networks:
+      - rabbitmq-net
+  sub-py1:
+    image: sub-py-cambio
+    container_name: pyCambio-rabbitmq-subscriber
+#    depends_on:
+#      - rabbitmq
+    networks:
+      - rabbitmq-net
+  sub-py2:
+    image: sub-py-delta
+    container_name: pyDelta-rabbitmq-subscriber
+#    depends_on:
+#      - rabbitmq
+    networks:
+      - rabbitmq-net
+
+  pub-java:
+    image: pub-java
+    container_name: java-rabbitmq-publisher
+#    depends_on:
+#      - rabbitmq
+    networks:
+      - rabbitmq-net
+  pub-py1:
+    image: pub-py:v1
+    container_name: python1-rabbitmq-publisher
+#    depends_on:
+#      - rabbitmq
+    networks:
+      - rabbitmq-net
+
+networks:
+  rabbitmq-net:
+    name: rabbitmq-net
+    external: true
