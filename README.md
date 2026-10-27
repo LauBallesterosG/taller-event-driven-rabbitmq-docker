@@ -50,5 +50,5 @@ Cada nodo cuenta con su propio archivo `docker-compose.yml`.
 ## Entregables de código
 
 - Código fuente de los productores y consumidores.
-- Archivos `Dockerfile` de los servicios.
-- Archivos `docker-compose.yml` correspondientes a los tres escenarios.
+- Archivos Dockerfile`de los servicios.
+- Archivos docker-compose.yml correspondientes a los tres escenarios.
