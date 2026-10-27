@@ -30,7 +30,7 @@ Los productores, consumidores y el broker RabbitMQ se ejecutan en un único nodo
 - **Nodo 1:** productores y consumidores.
 - **Nodo 2:** broker RabbitMQ.
 
-Cada nodo cuenta con su propio archivo `docker-compose.yml`.
+Cada nodo cuenta con su propio archivo docker-compose.yml.
 
 ### 3. Escenario distribuido en tres nodos
 
@@ -38,7 +38,7 @@ Cada nodo cuenta con su propio archivo `docker-compose.yml`.
 - **Nodo 2:** otro conjunto de productores y consumidores.
 - **Nodo 3:** broker RabbitMQ.
 
-Cada nodo cuenta con su propio archivo `docker-compose.yml`.
+Cada nodo cuenta con su propio archivo docker-compose.yml.
 
 ## Tecnologías utilizadas
 
